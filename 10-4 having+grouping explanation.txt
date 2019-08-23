@@ -1,0 +1,16 @@
+GROUP BY clause groups several rows together for aggregate analysis.
+
+HAVING clause requires a GROUP BY above it.  HAVING is like WHERE, but because it happens after GROUP BY it isn't limited to considering just one row.  WHERE on the other hand considers each row on its own, acting like a filter.
+
+ORDER BY is simple, it just arranges the output in the order of a given column.  Followed by ASC or DESC for ascending or descending.
+
+
+-- 10.4 destroying everything
+
+TRUNCATE TABLE bank.customer
+
+RENAME TABLE bank.account TO bank.customer_account;
+
+DROP TABLE bank.customer
+
+DROP TABLE bank.customer_account
